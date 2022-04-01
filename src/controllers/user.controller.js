@@ -10,7 +10,7 @@ const create = async (request, response) => {
     try {
         await user.save();
         return response.status(200).json({
-            message: "Successfully signed up!"
+            message: "Student details saved"
         });
     } catch (error) {
         return response.status(400).json({

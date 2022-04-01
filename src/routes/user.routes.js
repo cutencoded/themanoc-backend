@@ -4,7 +4,7 @@ const authCtrl = require('../controllers/auth.controller');
 
 const router = express.Router();
 
-router.route('/api/users')
+router.route('/api/students')
     .get(userCtrl.list)
     .post(userCtrl.create);
 

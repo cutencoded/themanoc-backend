@@ -2,13 +2,9 @@ const mongoose = require('mongoose');
 const crypto = require('crypto');
 
 const GuardianSchema = new mongoose.Schema({
-    first_name: {
+    guardian_name: {
         type: String,
         required: 'Guardian first name is required'
-    },
-    last_name: {
-        type: String,
-        required: 'Guardian last name is required'
     },
     phone_number: {
         type: String,
@@ -39,6 +35,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: 'Student date of birth is required'
     },
+    phone_number: String,
     student_email: {
         type: String,
         trim: true,
