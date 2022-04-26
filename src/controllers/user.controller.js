@@ -22,6 +22,7 @@ const read = (request, response) => {
     return response.json(request.profile);
 }
 
+// lists all students
 const list = async (request, response) => {
     try {
         const query = {};
