@@ -55,7 +55,7 @@ const update = async (request, response) => {
 
 const remove = async (request, response) => {
     try {
-        await User.deleteOne({ _id: request.query.id });
+        await User.deleteMany();
         response.json({ message: 'Student terminated' });
     } catch (error) {
         return response.status(400).json({
